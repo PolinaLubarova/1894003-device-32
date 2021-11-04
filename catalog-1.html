@@ -123,14 +123,12 @@
 
       <!--Список товаров с фильтрами-->
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <label class="filter-label-big" for="filter-label-big">Фильтр:</label>
+        <h2 class="filter-label-big">Фильтр:</h2>
         <form class="catalog-filter" action="#" method="get">
                         
-          <fieldset class="catalog-filter-group" id="filter-label-big">
+          <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
-              <input type="range" id="price" name="price" min="0" max="10000" value="5000">
-              <label for="price">Стоимость</label>    
+              <input type="range" id="price" name="price" min="0" max="10000" value="5000"> 
           </fieldset>
                 
           <fieldset class="catalog-filter-group">
@@ -215,7 +213,7 @@
           </li>
           <li class="product-card">
             <img class="product-card-image" src="images/selfi-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <a class="button-catalog-new" href="#">New</a>
+            <a class="button-catalog-new" href="#"><img src="images/new.svg" width="60" height="60" alt="New"></a>
             <b class="product-card-title">Селфи-палка «Следуй за мной»</b>
             <span class="product-card-price">4900 ₽</span>
           </li>
@@ -254,7 +252,7 @@
     </main>
 
     <!--Футер-->
-   <footer class="page footer">
+   <footer class="page-footer">
       <section class="footer-contacts">
         <h3 class="visually-hidden">Контакты</h3>
         <img class="footer-contacts-logo" src="images/logo-footer.svg" alt="Логотип Device»">

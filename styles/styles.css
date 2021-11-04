@@ -180,7 +180,7 @@ a {
 }
 
 /*Футер*/
-.page footer{
+.page-footer {
   color: #ffffff;
   background-color: #444444;
 }
@@ -219,7 +219,7 @@ a {
 }
 
 .catalog-filter-group {
-  background-color: EBEBEB;
+  background-color: #EBEBEB;
 }
 
 .catalog-filter-title {
