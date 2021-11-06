@@ -30,6 +30,18 @@
 }
  
 /*общие*/ 
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -62,7 +74,7 @@ a {
   text-align: center;
   color: #000000;
   background-color: #FFE17F;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
   
@@ -70,37 +82,97 @@ a {
 .page-header {
   color: #000000;
   background: #FFE17F;
+  width: 1160px;
+  margin: 0 auto;
 }
-  
-.nav-search {
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  width: 1041px;
+  margin: 0 auto;
+}
+
+.user-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1041px;
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+.top-search-form {
   color: rgba(0, 0, 0, 0,7);
   font-size: 16px;
 }
 
-.user-nav {
-  color: #000000;
-  font-size: 16px;
-  text-align: left;
-}
-
 .menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1041px;
   font-family: Raleway, sans-serif;
   color: #000000;
   font-size: 16px;
   text-align: left;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
+}
+
+.main-index {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 /*Навигация скрытый каталог*/
 .nav-catalog {
+  display: flex;
+  flex-direction: row;
+  width: 1041px;
   font-size: 16px;
   line-height: 18px;
 }
 
 /*слайдер*/
 
+.sliders { 
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider-main-first {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider-text {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  margin: 0 auto;
+}
+
+.slider-column1 { 
+  padding-right: 50px;
+}
+
+.slider-main-second {
+  display: none;
+}
+
+.slider-main-third {
+  display: none;
+}
+
 .table-slider-main {
+  margin-right: auto;
   background-color: #ffffff;
 }
 
@@ -117,7 +189,20 @@ a {
 }
 
 /*Категории каталога (квадраты)*/
+.categories {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto 69px;
+}
+
 .categories-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -125,37 +210,107 @@ a {
   background-color: #ffffff;
 }
 
+.categories-item {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+}
+
 /*сервисы*/
 .services {
   background-color: #F0F0F0;
+  min-width: 100%;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+
 }
 
 .services-list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   font-family: Raleway, sans-serif;
   line-height: 21px;
   font-weight: 800;
   text-align: center;
   color: #000000;
   background-color: #FFE17F;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.delivery-description {
+  display: flex;
+  flex-direction: column;
+  width: 497px;
+}
+
+.quarantee-description {
+  display: none;
+}
+
+.credit-description {
+  display: none;
 }
 
 /*Баннер*/
 .delivery-banner {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 90px auto;
   background-color: #F0F0F0;
   color:#000000;
   font-family: Raleway, sans-serif;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
+.delivery-banner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+}
+
+.delivery-info {
+  padding-right: 33px;
+}
+
 /*Блоки о нас и контакты*/
+.about-contacts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .about-us {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  margin: 0 auto;
   background-color: #ffffff;
   list-style: #FFE17F;
   font-weight: 700;
   line-height: 20px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  margin: 0 auto;
 }
 
 .contacts-title-small {
@@ -166,17 +321,37 @@ a {
 /*Подписка*/      
 .subscribe {
   background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  margin: 87px auto 0;
+  padding-bottom: 131px;
+}
+
+.subscribe-text-container {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .subscribe-form {
   color: rgba(0, 0, 0, 0,5);
 }
 
+.subscribe-form-container {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .subscribe-button {
   font-family: Raleway, sans-serif;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
 }
 
 /*Футер*/
@@ -184,23 +359,73 @@ a {
   color: #ffffff;
   background-color: #444444;
 }
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 238px;
+}
 
 .footer-contacts-address {
   font-size: 16px;
   line-height: 19px;
 }
 
+.footer-center-container {
+  display: flex;
+  flex-direction: column;
+  width: 458px;
+}
+
 .footer-services {
+  display: flex;
+  flex-direction: column;
+  width: 458px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
+.footer-services-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 458px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  width: 458px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 458px;
+}
+
 .footer-contacts-phone {
+  display: flex;
+  flex-direction: column;
+  width: 293px;
   font-size: 16px;
   line-height: 19px;
   text-align: right;
+}
+
+.htmlacademy-container {
+  width: 115px;
+  margin-left: auto;
 }
 
 /*Каталог*/
@@ -213,7 +438,7 @@ a {
 .filter-label-big {
   font-size: 16px;
   color: #000000;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   background-color: #DCDCDC;
 }
@@ -224,14 +449,14 @@ a {
 
 .catalog-filter-title {
   color: #000000;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
 .sorting-label {
   font-size: 16px;
   color: #000000;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   background-color: #EBEBEB;
 }
@@ -250,14 +475,14 @@ a {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
 }
 
 .button-show-more {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 16px;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
   text-align: center;
 }
 
@@ -269,7 +494,7 @@ a {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 16px;
-  letter-spacing: 20%;
+  letter-spacing: 0.2em;
 }
 
 .pagination-item {
