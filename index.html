@@ -14,7 +14,7 @@
     <header class="page-header">
 
       <!--Главный заголовок -->
-      <div class="header-container">
+      <div class="container">
         <h1 class="visually-hidden">Интернет-магазин Device</h1>
         <img class="main-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип Device">
       
@@ -65,7 +65,7 @@
 
           <!--Навигация скрытый каталог-->
           <section class="nav-catalog">
-            <h2 class="virtually-hidden">Каталог товаров</h2>
+            <h2 class="visually-hidden">Каталог товаров</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <a href="#">
@@ -112,10 +112,10 @@
 
       <!--Слайдеры-->
       <section class="sliders">
-        <h2 class="virtually-hidden">Лучшие товары</h2>
+        <h2 class="visually-hidden">Лучшие товары</h2>
         <div class="slider-main-first"> 
           <div class="slider-picture">
-            <h3 class="virtually-hidden">Мощный квадрокоптер</h3> 
+            <h3 class="visually-hidden">Мощный квадрокоптер</h3> 
             <img class="product-slider-main" src="images/kvadrokopter-big.png" width="560" height="560" alt="Мощный квадрокоптер">
           </div>
           <div class="slider-text">
@@ -138,7 +138,7 @@
 
         <div class="slider-main-second">
           <div class="slider-picture">
-            <h3 class="virtually-hidden">Фитнес-браслеты</h3> 
+            <h3 class="visually-hidden">Фитнес-браслеты</h3> 
             <img class="product-slider-main" src="images/fitnes-braslet-slider.png" width="560" height="560" alt="Фитнес-браслеты">
           </div>
           <div class="slider-text">
@@ -159,7 +159,7 @@
                       
         <div class="slider-main-third">
           <div class="slider-picture">
-            <h3 class="virtually-hidden">Селфи-палки</h3> 
+            <h3 class="visually-hidden">Селфи-палки</h3> 
             <img class="product-slider-main" src="images/selfi-sticks-slider.png" width="560" height="560" alt="Селфи-палки">
           </div>
           <div class="slider-text">
@@ -185,7 +185,7 @@
                     
       <!--Категории каталога (квадраты)-->
       <section class="categories">
-        <h2 class="virtually-hidden">Категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-list">
           <li class="categories-item">
             <a href="#">
@@ -229,8 +229,8 @@
 
       <!--Сервисы-->
       <section class="services">
-        <h2 class="virtually-hidden">Сервисы</h2>
-        <div class="services-container">
+        <h2 class="visually-hidden">Сервисы</h2>
+        <div class="description-container">
           <ul class="services-list">
             <li class="services-delivery">ДОСТАВКА</li>
             <li class="services-quarantee">ГАРАНТИЯ</li>
@@ -242,7 +242,7 @@
                           к вашему подъезду совершенно бесплатно! Ведь
                           мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div> 
-          <img class="delivery-picture" src="images/delivery 2.svg" width="136" height="164" alt="Доставка">
+          <!--<img class="delivery-picture" src="images/delivery 2.svg" width="136" height="164" alt="Доставка">-->
           <div class="quarantee-description">
             <h3 class="title">Гарантия</h3>
             <p class="text-main">Если из-за возгорания купленного у нас товара у вас
@@ -262,16 +262,16 @@
 
       <!--Баннер-->
       <section class="delivery-banner">
-        <h3 class="virtually-hidden">Спецпредложения доставки</h3>
-        <div class="delivery-banner-container">
+        <h3 class="visually-hidden">Спецпредложения доставки</h3>
+
           <img class="delivery-banner-pict" src="images/delivery-banner.svg" width="125" height="100" alt="<Доставка>">
           <b class="delivery-banner-text">Доставим редкий товар под заказ</b>
-          <img class="delivery-info" src="images/info.svg" width="40" height="40" alt="Инфо">
-        </div>
+          <!--<img class="delivery-info" src="images/info.svg" width="40" height="40" alt="Инфо">-->
+
       </section>
               
       <!--Блоки о нас и контакты-->
-      <div class="about-contacts-container">
+      <div class="container-row">
         <section class="about-us">
           <h2 class="about-us-title">О нас</h2>
           <p class="text-main">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -299,7 +299,7 @@
 
       <!--Подписка-->       
       <section class="subscribe">
-        <div class="subscribe-text-container">
+        <div class="container-row">
           <h2 class="title">Подпишитесь на рассылку</h2>
           <p class="text-main">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
@@ -316,7 +316,7 @@
 
     <!--Футер-->
     <footer class="page-footer">
-      <div class="footer-container">
+      <div class="container-row">
 
         <section class="footer-contacts">
                       <h3 class="visually-hidden">Контакты</h3>
@@ -347,17 +347,20 @@
             <h3 class="visually-hidden">Соцсети</h3>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="button" href="#">
+                <a href="#">
+                  <img src="images/facebook.svg"  width="40" height="40" alt="Facebook">
                   <span class="visually-hidden">Facebook</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="#">
+                <a href="#">
+                  <img src="images/instagram.svg"  width="40" height="40" alt="Instagram">
                   <span class="visually-hidden">Instagram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="#">
+                <a href="#">
+                  <img src="images/twitter.svg"  width="40" height="40" alt="Twitter">
                   <span class="visually-hidden">Twitter</span>
                 </a>
               </li>
