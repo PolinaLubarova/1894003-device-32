@@ -22,50 +22,55 @@
         <nav class="navigation">
 
           <!--Навигация для пользователя -->
-          <ul class="user-nav">
-            <li class="user-nav-item">
-              <form class="nav-search-form" action="#" method="post">
-                <label class="top-search-form" for="top-search-form">Поиск по сайту</label>
-                <input class="field" placeholder="Поиск по сайту" type="search" name="top-search-form" id="top-search-form" required>
-              </form>
-            </li>
-            <li class="user-nav-item">
-              <a class="user-nav-link" href="#">
-                <span class="user-nav-enter">Войти</span>
-              </a>
-            </li>
-            <li class="user-nav-item">
-              <a class="user-nav-link" href="#">
-                <span class="user-nav-compare">Сравнить</span>
-              </a>
-            </li>
-            <li class="user-nav-item">
-              <a class="user-nav-link" href="#">
-                <span class="user-nav-basket">Корзина</span>
-              </a>
-            </li>
-          </ul>
+          <div class="container-row">
+            <form class="nav-search-form" action="#" method="post">
+              <label class="visually-hidden top-search-form" for="top-search-form">Поиск по сайту</label>
+              <input class="field" placeholder="Поиск по сайту" type="search" name="top-search-form" id="top-search-form" required>
+            </form>
+            <ul class="user-nav">
+              <li class="user-nav-item">
+                <a class="user-nav-link" href="#">
+                  <span class="user-nav-enter">Войти</span>
+                </a>
+              </li>
+              <li class="user-nav-item">
+                <a class="user-nav-link" href="#">
+                  <span class="user-nav-compare">Сравнить</span>
+                </a>
+              </li>
+              <li class="user-nav-item">
+                <a class="user-nav-link" href="#">
+                  <span class="user-nav-basket">Корзина</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <!--Навигация меню-->       
-          <ul class="menu-nav">
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="catalog-1.html">Каталог товаров</a>
-            </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="delivery.html">Доставка</a>
-            </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="guarantee.html">Гарантия</a>
-            </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="contacts.html">Контакты</a>
-            </li>
-          </ul>
+          <!--Навигация меню-->
+          <section class="menu-catalog">
+            <h2 class="visually-hidden">Каталог товаров</h2>
 
+            <div class="nav-catalog">
+              <a class="menu-catalog-link" href="catalog-1.html">Каталог товаров </a>
+              <button class="button-plus"><img src="images/plus-header.svg" width="50" height="50" alt="Кнопка плюс"></button> 
+              <button class="button-plus"><img src="images/minus.svg" width="50" height="50" alt="Кнопка минус"></button> 
+            </div>
+
+            <ul class="menu-nav">
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="delivery.html">Доставка</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="guarantee.html">Гарантия</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </section>
 
           <!--Навигация скрытый каталог-->
-          <section class="nav-catalog">
-            <h2 class="visually-hidden">Каталог товаров</h2>
+          <div class="hidden-catalog">
             <ul class="catalog-list">
               <li class="catalog-item">
                 <a href="#">
@@ -98,11 +103,11 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <a href="#">
-                <span class="catalog-name">Квадрокоптеры</span>
+                  <span class="catalog-name">Квадрокоптеры</span>
                 </a>
               </li>
             </ul>
-          </section>
+          </div>
 
         </nav>
       </div>
@@ -230,33 +235,34 @@
       <!--Сервисы-->
       <section class="services">
         <h2 class="visually-hidden">Сервисы</h2>
-        <div class="description-container">
+        <div class="container-row">
           <ul class="services-list">
             <li class="services-delivery">ДОСТАВКА</li>
             <li class="services-quarantee">ГАРАНТИЯ</li>
             <li class="services-credit">КРЕДИТ</li>
           </ul>
-          <div class="delivery-description">
-            <h3 class="title">Доставка</h3>
-            <p class="text-main">Мы с удовольствием доставим ваш товар прямо
-                          к вашему подъезду совершенно бесплатно! Ведь
-                          мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </div> 
-          <!--<img class="delivery-picture" src="images/delivery 2.svg" width="136" height="164" alt="Доставка">-->
-          <div class="quarantee-description">
-            <h3 class="title">Гарантия</h3>
-            <p class="text-main">Если из-за возгорания купленного у нас товара у вас
-                            сгорит дом — не переживайте, мы выдадим вам новый.
-                            Товар, не дом, конечно же.</p>
-            <img src="images/warranty 1.svg" width="171" height="195" alt="Гарантия">
-          </div> 
-          <div class="credit-description">
-            <h3 class="title">Кредит</h3>
-            <p class="text-main">Залезть в долговую яму стало проще! Кредитные
-                              консультанты подберут для вас наиболее выгодные условия кредита.
-                              Выгодные для банка, разумеется.</p>
-            <img src="images/credit 1.svg" width="156" height="188" alt="Кредит">
-          </div> 
+          <div class="description">
+            <div class="delivery-description">
+              <h3 class="title">Доставка</h3>
+              <p class="text-main">Мы с удовольствием доставим ваш товар прямо
+                            к вашему подъезду совершенно бесплатно! Ведь
+                            мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div> 
+            <div class="quarantee-description">
+              <h3 class="title">Гарантия</h3>
+              <p class="text-main">Если из-за возгорания купленного у нас товара у вас
+                              сгорит дом — не переживайте, мы выдадим вам новый.
+                              Товар, не дом, конечно же.</p>
+              <img src="images/warranty 1.svg" width="171" height="195" alt="Гарантия">
+            </div> 
+            <div class="credit-description">
+              <h3 class="title">Кредит</h3>
+              <p class="text-main">Залезть в долговую яму стало проще! Кредитные
+                                консультанты подберут для вас наиболее выгодные условия кредита.
+                                Выгодные для банка, разумеется.</p>
+              <img src="images/credit 1.svg" width="156" height="188" alt="Кредит">
+            </div> 
+          </div>
         </div>
       </section>
 
@@ -266,7 +272,6 @@
 
           <img class="delivery-banner-pict" src="images/delivery-banner.svg" width="125" height="100" alt="<Доставка>">
           <b class="delivery-banner-text">Доставим редкий товар под заказ</b>
-          <!--<img class="delivery-info" src="images/info.svg" width="40" height="40" alt="Инфо">-->
 
       </section>
               
